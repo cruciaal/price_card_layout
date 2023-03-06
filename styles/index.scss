@@ -17,11 +17,16 @@ body {
 }
 
 .price-card {
+  min-height: 100vh;
   display: flex;
   gap: 18px;
+  margin: auto;
+  // flex-wrap: wrap;
 
   &__body {
-    flex: 0 1 auto;
+    width: 380px;
+    height: 770px;
+    position: relative;
     background-color: #334247;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   }
@@ -76,6 +81,27 @@ body {
     border-radius: 20px;
     margin: 39px 113px 40px 112px;
   }
+}
+.label {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  background-color: #dc3f45;
+  width: 147px;
+  height: 25px;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.label-text {
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  left: 32.86%;
+  right: 5.04%;
+  top: calc(50% - 17px / 2 - 25.29px);
 }
 .text {
 }

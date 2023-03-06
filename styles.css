@@ -7,7 +7,7 @@ body {
   align-items: center;
 }
 
-[class*=__container] {
+[class*='__container'] {
   max-width: 1205px;
   margin: 0 auto;
   padding: 0px 15px;
@@ -16,11 +16,14 @@ body {
 .price-card {
   display: flex;
   gap: 18px;
+  flex-wrap: wrap;
 }
 .price-card__body {
-  flex: 0 1 auto;
+  position: relative;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  width: 380px;
+  height: 770px;
 }
 .price-card__header {
   margin: 33px 140px;
@@ -67,6 +70,30 @@ body {
   margin: 39px 113px 40px 112px;
 }
 
+.label {
+  top: 30px;
+  right: -30px;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  background-color: #dc3f45;
+  width: 147px;
+  height: 25px;
+
+  transform: rotate(45deg);
+}
+
+.label-text {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
 .items {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -80,8 +107,9 @@ body {
 }
 
 .items::before {
-  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png") 0 0 no-repeat;
-  content: "";
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png')
+    0 0 no-repeat;
+  content: '';
   width: 15px;
   height: 13px;
   display: inline-block;
@@ -108,11 +136,11 @@ body {
 }
 
 .items_blue::before {
-  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
 }
 
 .items_orange::before {
-  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
 }
 
 .price-card__order-btn_blue {
